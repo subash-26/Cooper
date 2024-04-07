@@ -90,10 +90,4 @@ and then transform in separate line and use transform only for unseen data
 
 ## **Model GUI**
 
-**Prediction of Selling price**
 
-![pred_sp](https://github.com/beingbvh/Industrial_Copper_Modeling/assets/135937352/7a4900a3-12d1-45d6-859c-7c4f8faab5b6)
-
-**Prediction of status**
-
-![pred_status](https://github.com/beingbvh/Industrial_Copper_Modeling/assets/135937352/9c619c1e-9df8-4bd3-a7ca-c92f45045a7c)

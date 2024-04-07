@@ -10,13 +10,35 @@ import streamlit as st
 import re
 import pickle
 
-st.set_page_config(layout="wide")
+
+page_be_image = f"""
+<style>
+[data-testid="stAppViewContainer"]{{
+background-color: #B87333;
+background-size: cover
+}}
+
+[data-testid="stHeader"] {{
+background-color: #B87333;
+}}
+
+[data-testid="stSidebarContent"] {{
+background-color: #B87333;
+}}
+</style>
+"""
+st.markdown(page_be_image,unsafe_allow_html=True)
+
+
 
 st.write("""
 <div style='text-align:center'>
     <h1 style='color:#009999;'>Industrial Copper Modeling Application</h1>
 </div>
 """, unsafe_allow_html=True)
+
+  
+
 
 tab1, tab2 = st.tabs(["PREDICT SELLING PRICE", "PREDICT STATUS"])
 with tab1:
@@ -45,7 +67,7 @@ with tab1:
             product_ref = st.selectbox("Product Reference", product, key=5)
         with col3:
             st.write(
-                f'<h5 style="color:rgb(0, 153, 153,0.4);">NOTE: Min & Max given for reference, you can enter any value</h5>',
+                f'<h5 style="color:rgb(71, 140, 204);">NOTE: Min & Max given for reference, you can enter any value</h5>',
                 unsafe_allow_html=True)
             quantity_tons = st.text_input("Enter Quantity Tons (Min:611728 & Max:1722207579)")
             thickness = st.text_input("Enter thickness (Min:0.18 & Max:400)")
@@ -159,4 +181,9 @@ with tab2:
         else:
             st.write('## :red[The status is Lost] ')
 
-st.write(f'<h6 style="color:rgb(0, 153, 153,0.35);">App Created by Balavignesh SS</h6>', unsafe_allow_html=True)
+
+
+
+    else:
+        st.session_state.login_status = False
+        st.error("Invalid Credentials. Please try again.")
