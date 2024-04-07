@@ -1,6 +1,6 @@
 # **Industrial Copper Modeling**
 
-[LinkedIN](https://www.linkedin.com/feed/update/urn:li:share:7109391802012495872/)
+[LinkedIN](https://www.linkedin.com/in/subash-raji-4635b7240/)
 
 [click here for demo video](https://youtu.be/W_h8j8591vk)
 
